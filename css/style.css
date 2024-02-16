@@ -102,3 +102,17 @@ main {
   font-size:larger;
 }
 
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.about-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.about-left p {
+  margin-bottom: 10px;
+}
