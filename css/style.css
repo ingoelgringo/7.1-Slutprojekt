@@ -93,13 +93,15 @@ main {
 }
 
 img {
-  width: 100%;
+
 }
 
 footer {
   position: fixed;
   bottom: 0px;
-  height: 50px;
+  height: 70px;
+  padding-top: 18px;
+  background: rgb(219, 212, 205);
   display: grid;
   grid-template-columns: 2fr auto 1fr;
   width: inherit;
