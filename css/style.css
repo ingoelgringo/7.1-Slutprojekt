@@ -1,7 +1,11 @@
-*{
-  box-sizing: border-box;
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
 }
 
 body {
@@ -10,46 +14,22 @@ body {
 }
 
 .wrapper {
-  width: 85%;
+  width: 100%;
   max-width: 1100px;
-  height: 100vh;
+  min-height: 100vh;
   margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+}
+
+header, footer {
+  position: fixed;
+  width: inherit;
+  max-width: inherit;
+  background: rgb(118, 181, 118);
 }
 
 header {
-  position: fixed;
-  top: 0px;
-  height: 75px;
-  background: rgb(219, 212, 205);
-  width: inherit;
-  max-width: inherit;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-ul {
-  list-style-type: none;
-}
-
-nav {
-  flex: auto;
-}
-
-header ul {
-  display: flex;
-  justify-content: space-between;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-nav p {
-  text-decoration: line-through;
+  top: 0;
+  padding: 2rem 1rem;
 }
 
 a {
@@ -57,8 +37,50 @@ a {
   color: black;
 }
 
+nav p {
+  text-decoration: line-through;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  bottom: 0;
+  padding: 1.2rem 1rem;
+}
+
+.foot-1 {
+  flex-grow: 4;
+  font-size: xx-large;
+}
+
+/* @media (max-width: 600px) {
+  .foot-1 {
+    font-size: larger;
+  }
+} */
+
+.foot-2, .foot-3 {
+  flex-grow: 1;
+  text-align: right;
+  margin-left: 10px;
+}
+
 main {
-  width: 100%;
+  display: grid;
+  padding: 100px 1rem;
+  min-height: 100vh;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-top: 10%;
 }
 
 .delin {
@@ -69,8 +91,6 @@ main {
 .delinfo {
   display: flex;
   justify-content: space-between;
-  padding: 0px 30px;
-  align-items: center;
 }
 
 .info-a {
@@ -82,41 +102,3 @@ main {
   font-size:larger;
 }
 
-.shop {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
-
-.iteminfo {
-  
-}
-
-img {
-
-}
-
-footer {
-  position: fixed;
-  bottom: 0px;
-  height: 70px;
-  padding-top: 18px;
-  background: rgb(219, 212, 205);
-  display: grid;
-  grid-template-columns: 2fr auto 1fr;
-  width: inherit;
-  max-width: inherit;
-}
-
-footer p.ass {
-  font-size: xx-large;
-}
-
-.code {
-  text-align: right;
-}
-
-footer ul {
-  text-align: right;
-  margin-left: 10px;
-}
