@@ -22,6 +22,8 @@ body {
   flex-direction: column;
 }
 
+/* ///////// HEADER & FOOTER ///////// */
+
 header, footer {
   position: fixed;
   width: inherit;
@@ -76,11 +78,15 @@ footer {
   margin-left: 10px;
 }
 
+/* ///////// MAIN ///////// */
+
 main {
   display: grid;
   padding: 100px 1rem;
   min-height: 100vh;
 }
+
+/* ///////// INDEX PAGE ///////// */
 
 .home-container {
   display: flex;
@@ -107,6 +113,8 @@ main {
 .info-b {
   font-size:larger;
 }
+
+/* ///////// ABOUT PAGE ///////// */
 
 .about-container {
   display: grid;
@@ -148,3 +156,7 @@ main {
   width: 100%;
   object-fit: cover;
 }
+
+/* ///////// SHOP PAGE ///////// */
+
+/* ///////// EVENTS PAGE ///////// */
