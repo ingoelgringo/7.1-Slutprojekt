@@ -167,6 +167,7 @@ main {
 .shop {
   display: flex;
   margin-bottom: 10px;
+  gap: 2rem;
 }
 
 .shop aside {
@@ -184,6 +185,13 @@ main {
 
 .shop p {
   font-size:x-large ;
+}
+
+.shop .sticky-text {
+  position: sticky;
+  top: 80px;
+  bottom: 100px;
+  margin-bottom: 50%;
 }
 
 /* ///////// EVENTS PAGE ///////// */
