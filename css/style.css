@@ -165,6 +165,7 @@ main {
 
 .shop {
   display: flex;
+  margin-bottom: 10px;
 }
 
 .shop aside {
