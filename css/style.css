@@ -29,6 +29,7 @@ header, footer {
   width: inherit;
   max-width: inherit;
   background: rgb(219, 212, 205);
+  z-index: 3;
 }
 
 header {
