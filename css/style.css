@@ -96,7 +96,8 @@ main {
   padding-top: 10%;
 }
 
-.delin {
+.delin h1{
+  font-weight: 400;
   font-size: 80px;
   line-height: 0.9;
 }
